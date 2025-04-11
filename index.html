@@ -288,15 +288,16 @@
 
 
 			<div class="form-group-row">
-            <div class="form-group" style="flex: 3">
+            <div class="form-group" style="flex: 2">
            		<div class="form-group" style="flex: 3;">
                 <label for="unidade">UNIDADE</label>
                 <select id="unidade" name="unidade" required onchange="markAsFilled(this)" autocomplete="off">
                     <option value=""></option>
                     <option value="FACULDADE DE ENGENHARIA DE BAURU">FACULDADE DE ENGENHARIA DE BAURU</option>
-					<option value="FACULDADE DE CIÊNCIAS">FACULDADE DE CIÊNCIAS</option>
-					<option value="FACULDADE DE ARQUITETURA, ARTES E COMUNICAÇÃO">FACULDADE DE ARQUITETURA, ARTES E COMUNICAÇÃO</option>
 					<option value="ADMINISTRAÇÃO GERAL DE BAURU">ADMINISTRAÇÃO GERAL DE BAURU</option>
+					option value="FACULDADE DE ARQUITETURA, ARTES E COMUNICAÇÃO">FACULDADE DE ARQUITETURA, ARTES E COMUNICAÇÃO</option>
+					<option value="FACULDADE DE CIÊNCIAS">FACULDADE DE CIÊNCIAS</option>
+									
 	             </select>
 				 </div>
 				 </div>
@@ -386,105 +387,41 @@
 			
 			
 			
-			<!-- Veículo e passageiros -->			
-			
-			<div class="form-group-row">
-            <div class="form-group" style="flex: 2">
-           		<div class="form-group" style="flex: 3;">
-                <label for="veiculo">VEÍCULO</label>
-                <select id="veiculo" name="veiculo" required onchange="markAsFilled(this)" autocomplete="off">
-                    <option value=""></option>
-                    <option value="C4 CACTUS">C4 CACTUS (4 PASSAGEIROS)</option>
-					<option value="COROLLA">COROLLA (4 PASSAGEIROS)</option>
-					<option value="HILUX">HILUX (4 PASSAGEIROS)</option>
-			        <option value="ÔNIBUS">ÔNIBUS (44 PASSAGEIROS)</option>
-					<option value="SPRINTER">SPRINTER (15 PASSAGEIROS)</option>					
-	             </select>
-				 </div>
-				 </div>
-				
-				
-      
-      
-      
-      
-      
-
-				
-            <div class="form-group" style="flex: 3;">
-                <label for="passageiros">QTD DE PASSAGEIROS</label>
-                <input type="text" id="numero" name="numero" oninput="maiusculas(this); markAsFilled(this)" required autocomplete="off">
-            </div>
-			</div>			
+		
 			
 			
 			
 			
 			<div class="form-group-row">
 			 <div class="form-group" style="flex: 4;">
-                <label for="nomeEvento">NOME DO EVENTO</label>
-                <input type="text" id="nomeEvento" name="nomeEvento"  oninput="maiusculas(this); markAsFilled(this)" required autocomplete="off">
+                <label for="atividade">ATIVIDADE</label>
+                <input type="text" id="atividade" name="atividade"  oninput="maiusculas(this); markAsFilled(this)" required autocomplete="off">
             </div>
-			  <div class="form-group" style="flex: 2;">
-                <label for="cidadeEvento">CIDADE DO EVENTO</label>
-                <input type="text" id="cidadeEvento" name="cidadeEvento"  oninput="maiusculas(this); markAsFilled(this)" required autocomplete="off">
-            </div>
-            <div class="form-group" style="flex: 1;">
-                <label for="estadoEvento">ESTADO</label>
-                <select id="estadoEvento" name="estadoEvento" required onchange="markAsFilled(this)">
-                    <option value=""></option>
-                    <option value="SP">SP</option>
-                    <option value="AC">AC</option>
-                    <option value="AL">AL</option>
-                    <option value="AP">AP</option>
-                    <option value="AM">AM</option>
-                    <option value="BA">BA</option>
-                    <option value="CE">CE</option>
-                    <option value="DF">DF</option>
-                    <option value="ES">ES</option>
-                    <option value="GO">GO</option>
-                    <option value="MA">MA</option>
-                    <option value="MT">MT</option>
-                    <option value="MS">MS</option>
-                    <option value="MG">MG</option>
-                    <option value="PA">PA</option>
-                    <option value="PB">PB</option>
-                    <option value="PR">PR</option>
-                    <option value="PE">PE</option>
-                    <option value="PI">PI</option>
-                    <option value="RJ">RJ</option>
-                    <option value="RN">RN</option>
-                    <option value="RS">RS</option>
-                    <option value="RO">RO</option>
-                    <option value="RR">RR</option>
-                    <option value="SC">SC</option>
-                    <option value="SP">SP</option>
-                    <option value="SE">SE</option>
-                    <option value="TO">TO</option>
-                </select>
-            </div>
-			</div>
 			
-			
-			
-			<div class="form-group-row">
-            <div class="form-group" style="flex: 1;">
-                <label for="inicio">DATA DE SAÍDA</label>
-                <input type="date" id="inicio" name="inicio" required onchange="markAsFilled(this)" autocomplete="off" min="">
-			</div>
-			<div class="form-group" style="flex: 1;">
-                <label for="termino">DATA DE RETORNO</label>
-                <input type="date" id="termino" name="termino" required onchange="markAsFilled(this)" autocomplete="off" min="">
-            </div>
 
-			</div>
+           		<div class="form-group" style="flex: 2;">
+                <label for="naturezaAtividade">NATUREZA DA ATIVIDADE</label>
+                <select id="veiculo" name="veiculo" required onchange="markAsFilled(this)" autocomplete="off">
+                    <option value=""></option>
+                    <option value="ACADEMICA">ACADÊMICA</option>
+					<option value="ADMINISTRATIVA">ADMINISTRATIVA</option>
+			        <option value="SERVIÇOS">SERVIÇOS</option>					
+					<option value="TRANSPORTE DE MATERIAIS">TRANSPORTES DE MATERIAIS</option>		
+	             </select>
+				 </div>	
+			 </div>
 			
 			
 			
 			
 			
 			
-			<div class="form-group-row">
+			
+			
+			
+			
+
+<div class="form-group-row">
 
 
 				
@@ -521,7 +458,7 @@
                 <label for="bairro">BAIRRO</label>
                 <input type="text" id="bairro" name="bairro"  oninput="maiusculas(this); markAsFilled(this)" required autocomplete="off">
             </div>
-            <div class="form-group" style="flex: 2;">
+            <div class="form-group" style="flex: 3;">
                 <label for="cidade">CIDADE</label>
                 <input type="text" id="cidade" name="cidade"  oninput="maiusculas(this); markAsFilled(this)" required autocomplete="off">
             </div>
@@ -560,6 +497,56 @@
                 </select>
             </div>
 			</div>
+
+
+
+
+
+
+
+
+
+<div class="form-group-row">
+			
+				
+	
+			
+			
+			
+			
+			
+            <div class="form-group" style="flex: 1;">
+                <label for="inicio">DATA DE SAÍDA</label>
+                <input type="date" id="inicio" name="inicio" required onchange="markAsFilled(this)" autocomplete="off" min="">
+			</div>
+			<div class="form-group" style="flex: 1;">
+                <label for="termino">DATA DE RETORNO</label>
+                <input type="date" id="termino" name="termino" required onchange="markAsFilled(this)" autocomplete="off" min="">
+            </div>
+
+			<!-- Veículo e passageiros -->
+           		<div class="form-group" style="flex: 4;">
+                <label for="veiculo">VEÍCULO</label>
+                <select id="veiculo" name="veiculo" required onchange="markAsFilled(this)" autocomplete="off">
+                    <option value=""></option>
+                    <option value="C4 CACTUS">C4 CACTUS (4 PASSAGEIROS)</option>
+					<option value="COROLLA">COROLLA (4 PASSAGEIROS)</option>
+					<option value="HILUX">HILUX (4 PASSAGEIROS)</option>
+			        <option value="ÔNIBUS">ÔNIBUS (44 PASSAGEIROS)</option>
+					<option value="SPRINTER">SPRINTER (15 PASSAGEIROS)</option>					
+	             </select>
+				 </div>
+            <div class="form-group" style="flex: 1;">
+                <label for="passageiros">PASSAGEIROS</label>
+                <input type="text" id="numero" name="numero" oninput="maiusculas(this); markAsFilled(this)" required autocomplete="off">
+            </div>
+
+			</div>
+			
+			
+		
+			
+			
 			
 			
 			
@@ -581,7 +568,7 @@
 		
 		
 		
-const scriptURL = "https://script.google.com/macros/s/AKfycbwseFsfcef1eVO98Z0XEBYgJrposMwjF-LMw_apGiJM8A9ku9vxOyiAXrbGkD-vxfQ/exec";
+const scriptURL = "";
 
 
 
